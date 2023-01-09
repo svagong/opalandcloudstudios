@@ -1,0 +1,115 @@
+/*
+Colors used: 
+Primary Color (Fog): #E1ECF3;
+Secondary Color (Deep Purple): #23022e;
+Highlight One (Lavender): #8c7aa9;
+Highlight Two (Orange): #fc7753;
+Text (Dark Grey): #393e41;
+*/
+/*Body*/
+body {
+    background-color: #E1ECF3;
+    font-family: 'Mukta', sans-serif;
+    font-size: 16px;
+    /* Sets the font size to 16px */
+    font-weight: 300;
+    /* Sets the font weight to 300 */
+    line-height: 1.6;
+    /* Sets the line-height to 1.6 * the font-size */
+    color: #393e41;
+
+}
+
+/*Headings*/
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-size: 2.25em;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 1.35em;
+    font-weight: 400;
+}
+
+/*Text States*/
+a {
+    color: #23022e;
+    text-decoration: none;
+    /* No underlining */
+}
+
+a:visited {
+    /* visited link */
+    color: #23022e;
+}
+
+a:hover,
+a:focus {
+    color: #fc7753;
+    text-decoration: underline;
+    /* Underlining when hovering over a link */
+}
+
+a:active {
+    /* selected link */
+    color: #fc7753;
+}
+
+
+
+/*Images*/
+img {
+    width: 100%;
+}
+
+/*Buttons*/
+.button {
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color:#8c7aa9;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #ffffff; /* width of the border, type, color */
+    transition: 0.2s opacity;
+  }
+
+  .button:visited {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+.button:hover {
+    opacity: 0.8; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+  }
+
+
+.button.contact {
+    background-color: transparent;
+    color: #8c7aa9;
+    text-transform: none;
+    border: 2px solid #ffffff;
+  }
+
+.button.contact:hover {
+  background-color: #8c7aa9;
+  color: #ffffff;
+}
