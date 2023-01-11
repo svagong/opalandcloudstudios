@@ -7,6 +7,12 @@ Highlight Two (Orange): #fc7753;
 Text (Dark Grey): #393e41;
 */
 /*Body*/
+header {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  }
+
 body {
     background-color: #E1ECF3;
     font-family: 'Mukta', sans-serif;
@@ -95,7 +101,7 @@ img {
     color: #ffffff;
     text-decoration: none;
   }
-  
+
 .button:hover {
     opacity: 0.8; /* Reduces the opacity of the button to 80% */
     text-decoration: none;
@@ -113,3 +119,4 @@ img {
   background-color: #8c7aa9;
   color: #ffffff;
 }
+
