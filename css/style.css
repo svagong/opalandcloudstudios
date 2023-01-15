@@ -16,7 +16,7 @@ header {
     text-align: center;
     padding: 10px 0;
     box-shadow: 4px 4px 5px -5px rgba(57, 62, 65, 0.71);
-    position: fixed;
+    position: relative;
     width: 100%;
     /* No spacing to top and bottom and auto spacing to left and right */
 }
@@ -58,13 +58,13 @@ nav>ul>li>a:active {
 
 #hero {
     background-color: #8c7aa9;
-    padding: 20px 0;
+    padding: 10px 0;
     display: inline-block;
     width: 100%;
 }
 
 main {
-    padding-top: 200px;
+    padding-top: 10px;
 }
 
 body {
@@ -80,8 +80,9 @@ body {
 
 }
 
-footer > #socials > ul {
+footer > #socials {
     display: inline-block;
+    margin-top: 10px;
 }
 
 footer > #socials > ul > a {
@@ -211,4 +212,8 @@ img {
 
 .icon {
     max-width:50px;
+}
+
+.centerh2 {
+    text-align: center;
 }
