@@ -58,7 +58,7 @@ nav>ul>li>a:active {
 
 #hero {
     background-color: #8c7aa9;
-    padding: 10px 0;
+    padding: 10px 0px;
     display: inline-block;
     width: 100%;
 }
@@ -80,14 +80,11 @@ body {
 
 }
 
-footer > #socials {
+#socials > a {
     display: inline-block;
-    margin-top: 10px;
+    margin: 20px 0px;
 }
 
-footer > #socials > ul > a {
-    display: inline-block;
-}
 /*Headings*/
 h1,
 h2,
