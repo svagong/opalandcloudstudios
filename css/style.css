@@ -230,6 +230,18 @@ nav {
     float: right;
     margin-top: 4px;
   }
+
+body{
+    font-size: 18px;
+}
+
+#hero{
+    text-align:center;
+}
+
+#hero span {
+    display: block;
+  }
 }
 
 /* ==============================
