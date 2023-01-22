@@ -80,7 +80,7 @@ body {
 
 }
 
-#socials > a {
+#socials>a {
     display: inline-block;
     margin: 20px 0px;
 }
@@ -185,6 +185,7 @@ img {
 
 /* Layout styling */
 .container {
+    margin: 0 auto;
     padding: 0 15px;
 }
 
@@ -208,7 +209,7 @@ img {
 }
 
 .icon {
-    max-width:50px;
+    max-width: 50px;
 }
 
 .centerh2 {
@@ -220,26 +221,114 @@ Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
-header {
-  text-align: unset;
-  padding: 20px 0 13px;
-}
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
 
-nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    #about h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
 }
 
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
+    .col-lg-7 {
+        width: 60%;
+    }
+
+    .col-lg-5 {
+        width: 40%;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {
+@keyframes color-change {
+    from {
+        fill: #edc655;
+    }
+
+    to {
+        fill: #f76414;
+    }
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.sun {
+    animation: 4s color-change infinite alternate linear;
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+.cloud-back {
+    animation: 40s cloud-move-reverse infinite alternate linear;
+}
+
+/* Pull left  */
+div.pullLeft a:before
+{
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    right: 0px;
+    top: 0px;
+    content: '';
+    background: #8c7aa9;
+    opacity: 0.3;
+    transition: all 0.3s;
+}
+
+div.pullLeft a:hover:before
+{
+    width: 100%;
 }
