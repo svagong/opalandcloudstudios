@@ -235,7 +235,23 @@ nav {
 body{
     font-size: 18px;
 }
+#about h3 { margin: 10px 0 0 0;}
 
+.col-md-6 {
+    width: 50%;
+  }
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+    margin: auto;
+  }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 #hero{
     text-align:center;
 }
@@ -262,6 +278,7 @@ Large devices (1024px or larger)
         margin-left: auto;
         margin-right: auto;
     }
+    
 }
 
 @keyframes color-change {
