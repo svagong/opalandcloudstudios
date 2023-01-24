@@ -261,6 +261,11 @@ body{
   }
 }
 
+#work h3 {
+    margin-top:0;
+    margin-bottom:0;
+}
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
