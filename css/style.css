@@ -328,12 +328,22 @@ Large devices (1024px or larger)
     animation: 40s cloud-move-reverse infinite alternate linear;
 }
 
+div.pullLeft a
+{
+    color:#23022e;
+    text-decoration: none;
+    margin: 0px 10px;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
 /* Pull left  */
 div.pullLeft a:before
 {
     position: absolute;
-    width: 2px;
-    height: 100%;
+    width: 0;
+    height: 90%;
     right: 0px;
     top: 0px;
     content: '';
@@ -344,5 +354,5 @@ div.pullLeft a:before
 
 div.pullLeft a:hover:before
 {
-    width: 100%;
+    width: 90%;
 }
