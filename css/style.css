@@ -189,17 +189,8 @@ img {
     max-width: 150px;
 }
 
-.navtoggle.responsive li {
-    display: block;
-}
-
 .navtoggle li:not(:last-child) {
     display: none;
-}
-
-.navtoggle,
-.navtoggle.responsive {
-    position: relative;
 }
 
 .navtoggle li .icon {
@@ -209,6 +200,29 @@ img {
     font-size: 20px;
     padding-right: 0px;
 }
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+  }
+  .navtoggle.responsive li  {
+    display: block;
+    padding: 10px 0;
+    text-align: center;
+    border-top: 1px ridge #8c7aa9;
+  }
+  
+  .navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+  }
 
 #work .row {
     padding-bottom: 25px;
