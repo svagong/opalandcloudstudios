@@ -13,30 +13,17 @@ Text (Dark Grey): #393e41;
 
 header {
     background-color: #ffffff;
-    text-align: center;
-    padding: 10px 0;
+    padding: 10px 4px;
     box-shadow: 4px 4px 5px -5px rgba(57, 62, 65, 0.71);
     position: relative;
     width: 100%;
     /* No spacing to top and bottom and auto spacing to left and right */
 }
 
-.logo {
-    max-width: 150px;
-}
-
-nav {
-    display: inline-block;
-    width: 100%;
-}
-
-nav>ul {
+nav>div>ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav>ul>li {
-    display: inline-block;
+    margin: 0;
 }
 
 nav>ul>li>a {
@@ -199,7 +186,28 @@ img {
 }
 
 .logo {
-    max-width: 250px;
+    max-width: 150px;
+}
+
+.navtoggle.responsive li {
+    display: block;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 20px;
+    padding-right: 0px;
 }
 
 #work .row {
@@ -233,44 +241,65 @@ Medium devices (640px and larger)
         padding: 20px 0 13px;
     }
 
-nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
 
-body{
-    font-size: 18px;
-}
-#about h3 { margin: 10px 0 0 0;}
+    nav>div>ul {
+        margin: 1em 0;
+    }
 
-.col-md-6 {
-    width: 50%;
-  }
+    nav>div>ul>li {
+        list-style-type: none;
+        display: inline-block;
+    }
 
-[class*="col-"] {
-    float: left;
-    padding: 10px;
-    margin: auto;
-  }
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
 
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-#hero{
-    text-align:center;
-}
+    .navtoggle li:last-child {
+        display: none;
+    }
 
-#hero span {
-    display: block;
-  }
+    body {
+        font-size: 18px;
+    }
+
+    #about h3 {
+        margin: 10px 0 0 0;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+        margin: auto;
+    }
+
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #hero {
+        text-align: center;
+    }
+
+    #hero span {
+        display: block;
+    }
 }
 
 #work h3 {
-    margin-top:0;
-    margin-bottom:0;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* ==============================
@@ -290,7 +319,7 @@ Large devices (1024px or larger)
         margin-left: auto;
         margin-right: auto;
     }
-    
+
 }
 
 @keyframes color-change {
@@ -335,9 +364,8 @@ Large devices (1024px or larger)
     animation: 40s cloud-move-reverse infinite alternate linear;
 }
 
-div.pullLeft a
-{
-    color:#23022e;
+div.pullLeft a {
+    color: #23022e;
     text-decoration: none;
     margin: 0px 10px;
     padding: 10px 10px;
@@ -345,9 +373,9 @@ div.pullLeft a
     z-index: 0;
     cursor: pointer;
 }
+
 /* Pull left  */
-div.pullLeft a:before
-{
+div.pullLeft a:before {
     position: absolute;
     width: 0;
     height: 90%;
@@ -359,7 +387,6 @@ div.pullLeft a:before
     transition: all 0.3s;
 }
 
-div.pullLeft a:hover:before
-{
+div.pullLeft a:hover:before {
     width: 90%;
 }
