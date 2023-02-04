@@ -21,6 +21,10 @@ header {
     /* No spacing to top and bottom and auto spacing to left and right */
 }
 
+.logo {
+    max-width: 150px;
+}
+
 nav {
     display: inline-block;
     width: 100%;
@@ -220,6 +224,9 @@ img {
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
+    .logo {
+        width: 100%;
+    }
 
     header {
         text-align: unset;
