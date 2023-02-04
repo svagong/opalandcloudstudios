@@ -17,16 +17,22 @@
 	<header>
 		<!--Nav-->
 		<div class="container">
-			<img class="logo" src="https://via.placeholder.com/150x50?text=logo" alt="Sylvia">
-			<nav>
-				<div class="container pullLeft">
-					<a href="index.html">Work</a>
-					<!--<li><a href="productivity.html">Productivity App</a></li>-->
-					<!--<li><a href="snapmap.html">SnapMap</a></li>-->
-					<a href="about.html">About</a>
-					<a href="#contact">Contact</a>
-				</div>
-			</nav>
+			<div class="navtoggle" id="myNavtoggle">
+				<img class="logo" src="https://via.placeholder.com/150x50?text=logo" alt="Sylvia">
+				<nav>
+					<div class="container pullLeft">
+						<ul>
+							<li><a href="index.html">Work</a></li>
+							<!--<li><a href="productivity.html">Productivity App</a></li>-->
+							<!--<li><a href="snapmap.html">SnapMap</a></li>-->
+							<li><a href="about.html">About</a></li>
+							<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+							<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i
+										class="fas fa-bars"></i></a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
 		</div>
 	</header>
 	<main>
