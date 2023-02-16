@@ -140,7 +140,7 @@ img {
     display: inline-block;
     /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
     background-color: #8c7aa9;
-    color: #ffffff;
+    color: #23022e;
     /* needed to override the default link color */
     font-weight: 400;
     padding: 10px;
@@ -151,7 +151,7 @@ img {
 }
 
 .button:visited {
-    color: #ffffff;
+    color: #23022e;
     text-decoration: none;
 }
 
@@ -171,7 +171,7 @@ img {
 
 .button.contact:hover {
     background-color: #8c7aa9;
-    color: #ffffff;
+    color: #23022e;
 }
 
 /* Layout styling */
