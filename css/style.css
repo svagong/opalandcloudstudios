@@ -49,10 +49,11 @@ nav>ul>li>a:active {
 }
 
 #hero {
-    background-color: #8c7aa9;
+    background-color: #c7d3eb;
     padding: 10px 0px;
     display: inline-block;
     width: 100%;
+    padding-bottom: 30px;
 }
 
 main {
@@ -140,7 +141,7 @@ img {
 .button {
     display: inline-block;
     /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-    background-color: #8c7aa9;
+    background-color: transparent;
     color: #23022e;
     /* needed to override the default link color */
     font-weight: 400;
@@ -152,11 +153,13 @@ img {
 }
 
 .button:visited {
+    background-color: #c7d3eb;
     color: #23022e;
     text-decoration: none;
 }
 
 .button:hover {
+    background-color: #c7d3eb;
     opacity: 0.8;
     /* Reduces the opacity of the button to 80% */
     text-decoration: none;
@@ -252,7 +255,7 @@ Medium devices (640px and larger)
     }
 
     .self {
-        width: 50%;
+        max-width: 600px;
     }
     header {
         text-align: unset;
