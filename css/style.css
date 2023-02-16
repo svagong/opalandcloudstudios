@@ -4,6 +4,7 @@ Primary Color (Fog): #E1ECF3;
 Secondary Color (Deep Purple): #23022e;
 Highlight One (Lavender): #8c7aa9;
 Highlight Two (Orange): #fc7753;
+Highlight Three (Light Blue): #c7d3eb;
 Text (Dark Grey): #393e41;
 */
 /*Body*/
@@ -166,11 +167,11 @@ img {
     background-color: transparent;
     color: #8c7aa9;
     text-transform: none;
-    border: 2px solid #ffffff;
+    border-bottom: 3px solid #8c7aa9;
 }
 
 .button.contact:hover {
-    background-color: #8c7aa9;
+    background-color: #c7d3eb;
     color: #23022e;
 }
 
@@ -217,7 +218,7 @@ img {
     display: block;
     padding: 10px 0;
     text-align: center;
-    border-top: 1px ridge #8c7aa9;
+    border-top: 1px ridge #c7d3eb;
   }
   
   .navtoggle.responsive li:last-child  {
@@ -400,10 +401,11 @@ div.pullLeft a:before {
     position: absolute;
     width: 0;
     height: 90%;
-    right: 0px;
+    right: 4px;
     top: 0px;
+    left: 3px;
     content: '';
-    background: #8c7aa9;
+    background: #c7d3eb;
     opacity: 0.3;
     transition: all 0.3s;
 }
