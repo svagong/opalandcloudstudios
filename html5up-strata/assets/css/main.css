@@ -364,14 +364,17 @@ pre code {
 #gallery img {
 	width: 100% !important;
 	height: auto !important;
-	margin-bottom: 5px;
-	/* to match column gap */
+	
 }
 
 #gallery img:hover {
 	filter: none;
 }
 
+#gallery a {
+	margin-bottom: 5px;
+	/* to match column gap */
+}
 /* Container */
 
 .container {
@@ -2210,7 +2213,7 @@ input[type="radio"]+label:before {
 	display: block;
 	height: 100%;
 	left: 0;
-	opacity: 0.5;
+	opacity: 0.2;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -2228,13 +2231,12 @@ input[type="radio"]+label:before {
 	border-radius: 0.35em;
 	border: solid 3px rgba(255, 255, 255, 0.5);
 	color: #fff;
-	content: 'See more';
 	display: inline-block;
 	font-size: 0.8em;
 	font-weight: 400;
 	left: 50%;
 	line-height: 2.25em;
-	margin: -1.25em 0 0 -3em;
+	margin: -1.25em 0 0 -3.5em;
 	opacity: 0;
 	padding: 0 1.5em;
 	position: absolute;
@@ -2244,6 +2246,16 @@ input[type="radio"]+label:before {
 	white-space: nowrap;
 }
 
+.image.thumb.project:after {
+	content: 'See more';
+}
+
+.image.thumb.photo:after {
+	content: 'View';
+	margin: -1.25em 0 0 -3em;
+}
+
+
 .image.thumb:hover:after {
 	opacity: 1.0;
 }
@@ -2251,6 +2263,7 @@ input[type="radio"]+label:before {
 .image.thumb:hover:before {
 	background: url("images/overlay.png"), url("images/overlay.png");
 	opacity: 1.0;
+	margin-bottom: 5px
 }
 
 .image img {
@@ -2939,7 +2952,7 @@ input[type="button"]:disabled,
 	border-radius: 0.35em;
 	box-shadow: 0 0.1em 0.15em 0 rgba(0, 0, 0, 0.15);
 	overflow: hidden;
-	padding-bottom: 3em;
+	padding-bottom: 0em;
 }
 
 .poptrox-popup .loader {
