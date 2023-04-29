@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sylvia Gong, UX/UI designer, Bay Area.</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="SylviaGong" />
+    <meta name="description" content="UX UI designger" />
+    <link rel="reset" type="text/css" href="css/reset.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mukta&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+
+  <body id="index">
+    <!-- Header -->
+    <header>
+      <!--Nav-->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html"> <img class="logo" src="images/sva-logo.svg" alt="Sylvia"/> </a>
+          <nav>
+            <div class="container pullLeft">
+              <ul>
+                <li><a href="index.html">Work</a></li>
+                <!--<li><a href="productivity.html">Productivity App</a></li>-->
+                <!--<li><a href="snapmap.html">SnapMap</a></li>-->
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+                <li>
+                  <a
+                    href="javascript:void(0);"
+                    class="icon"
+                    onclick="menuToggle()"
+                    ><i class="fas fa-bars"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- Hero -->
+      <div id="hero">
+        <div class="container">
+          <h2>Sylvia Gong, a UX/UI designer based in the Bay Area</h2>
+          <span>Scientist by training, designer by heart.</span>
+        </div>
+      </div>
+      <!--Work/Projects1-->
+      <div id="work">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
+              <picture>
+                <source
+                  srcset="images/ProductivityApp/img1.png"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="images/ProductivityApp/img2.png"
+                  alt="productivity_preview"
+                />
+              </picture>
+            </div>
+            <div class="column col-md-6 col-lg-5">
+              <h3>Productivity Mobile App</h3>
+              <p>
+                This project centered around designing a mobile productivity app
+                with three key functionalities: allowing users to create a user
+                profile, make tasks lists, and mark tasks as complete.
+              </p>
+              <a href="productivity.html" class="button">See more</a>
+            </div>
+          </div>
+          <!--Projects2-->
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
+              <picture>
+                <source
+                  srcset="images/SnapMap/snapmap_img_1x.jpg"
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="images/SnapMap/snapmap_img_2x.jpg"
+                  alt="snapmap_preview"
+                />
+              </picture>
+            </div>
+            <div class="column col-md-6 col-lg-5">
+              <h3>Snapmap, a location based photography app</h3>
+              <p>
+                Snap map finds the best photo spots for you, based on
+                recommendations from the community. Search for locations by area
+                and photography style. Get tips, tricks, inspiration, and engage
+                with fellow photographers.
+              </p>
+              <a href="snapmap.html" class="button">See more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+          <!--Projects3-->
+    </main>
+    <footer>
+      <div>
+        <p>Copyright sylvia-gong 2022</p>
+      </div>
+    </footer>
+    <!-- initiate Javascript-->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/53b306e1ae.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
