@@ -70,7 +70,7 @@ hr.intro {
     
     &:hover .word {
       opacity: 0.25;
-      @root {
+      :root {
         @keyframes wobble {
           0%,
           100% {
