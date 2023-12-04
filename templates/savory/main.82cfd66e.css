@@ -13,12 +13,99 @@ html {
     -webkit-text-size-adjust: 100%
 }
 
-/*intro section*/
-hr.intro {
-    width: 20%;
-    margin-left: 0;
-    border-width: 1px;
+/*background*/
+:root {
+    /*Page Colors*/
+    --bg-color: #ffffff;
+    /*Mesh Gradient Colors*/
+    --color-one: #4cd4b0;
+    --color-two: #7abfff;
+    --color-three: #f24d16;
+    --color-four: #edd834;
   }
+
+  #background_mesh {
+    z-index: -10;
+    position: relative;
+    display: contents;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color);
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+  }
+  .mesh_1 {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-color: var(--color-one);
+    border-radius: 50%;
+    bottom: 60%;
+    left: -20%;
+    z-index: -8;
+    animation: meshAnimate 4s infinite linear;
+  }
+  .mesh_2 {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-color: var(--color-two);
+    border-radius: 50%;
+    bottom: 70%;
+    right: 0%;
+    z-index: -7;
+    animation: meshAnimate 2s 4s infinite linear;
+  }
+  
+  .mesh_3 {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-color: var(--color-three);
+    border-radius: 50%;
+    bottom: -40%;
+    left: 25%;
+    z-index: -7;
+    animation: meshAnimate 2s 4s infinite linear;
+  }
+  
+  .mesh_4 {
+    position: absolute;
+    height: 700px;
+    width: 700px;
+    background-color: var(--color-four);
+    border-radius: 50%;
+    bottom: -30%;
+    right: -25%;
+    z-index: -7;
+    animation: meshAnimate 2s 6s infinite linear;
+  }
+  
+  .blur {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -5;
+    backdrop-filter: blur(400px);
+  }
+  
+  @keyframes meshAnimate {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+/*intro section*/
 
 #intro body {
     display: grid;
@@ -36,7 +123,7 @@ hr.intro {
   }
 
   .blank_word {
-    color:white;
+    opacity:0;
   }
 
   a.word {
@@ -70,46 +157,9 @@ hr.intro {
     
     &:hover .word {
       opacity: 0.25;
-      @root {
-        @keyframes wobble {
-          0%,
-          100% {
-            transform: translateY(0) rotate(0);
-          }
-          25%,
-          75% {
-            transform: translateY(-5px) rotate(5deg);
-          }
-          50% {
-            transform: translateY(5px) rotate(-5deg);
-          }
-        }
-      }
   
       &:hover {
         opacity: 1;
-  
-        .letter {
-          &::before {
-            animation: wobble 0.3s infinite;
-          }
-        }
-  
-        @for $i from 1 through 10 {
-          .letter:nth-child(#{$i}) {
-            --x: #{random(50) - 25};
-            --y: #{random(50) - 25};
-            --r: #{random(50) - 25};
-            &:hover {
-              z-index: 2;
-              text-shadow: 2px 2px 10px rgba(0,0,0);
-              --x: #{random(20) - 10};
-              --y: #{random(20) - 10};
-              --r: #{random(20) - 10};
-              --s: 1.25;
-            }
-          }
-        }
       }
     }
   }
@@ -1069,8 +1119,8 @@ pre code {
 }
 
 .row {
-    margin-left: -15px;
-    margin-right: -15px
+    margin-left: -15px; 
+    margin-right: -15px;
 }
 
 .row:after,
@@ -1134,7 +1184,8 @@ pre code {
     position: relative;
     min-height: 1px;
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
+    display: grid;
 }
 
 .col-xs-1,
