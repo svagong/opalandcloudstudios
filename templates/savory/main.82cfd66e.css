@@ -1071,8 +1071,6 @@ pre code {
 .row {
     margin-left: -15px; 
     margin-right: -15px;
-    height: 100vh;
-    width: 100%;
 }
 
 .row:after,
