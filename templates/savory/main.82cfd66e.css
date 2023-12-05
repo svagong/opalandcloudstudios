@@ -1193,6 +1193,7 @@ pre code {
     padding-left: 15px;
     padding-right: 15px;
     width: 100%;
+    display:grid; 
 }
 
 .col-xs-1,
