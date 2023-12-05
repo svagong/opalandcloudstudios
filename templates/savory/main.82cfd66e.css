@@ -27,11 +27,11 @@ html {
   #background_mesh {
     z-index: -10;
     position: relative;
-    display: contents;
+    display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--bg-color);
-    height: fit-content;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
   }
@@ -105,10 +105,15 @@ html {
     }
   }
 
+.mesh_container {
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+}
 /*intro section*/
 
 #intro body {
-    display: grid;
+    display:block;
     place-items: center;
     min-height: 100svh;
     background-color: black;
@@ -464,7 +469,7 @@ th {
 :before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
 }
 
 html {
@@ -1121,6 +1126,8 @@ pre code {
 .row {
     margin-left: -15px; 
     margin-right: -15px;
+    height: 100vh;
+    width: 100%;
 }
 
 .row:after,
@@ -1185,7 +1192,7 @@ pre code {
     min-height: 1px;
     padding-left: 15px;
     padding-right: 15px;
-    display: grid;
+    width: 100%;
 }
 
 .col-xs-1,
