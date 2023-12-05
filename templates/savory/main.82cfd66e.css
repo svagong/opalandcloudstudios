@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,700|Source+Sans+Pro:400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+
 
 /*!
  * Bootstrap v3.3.7 (http://getbootstrap.com)
@@ -14,112 +16,38 @@ html {
 }
 
 /*background*/
-:root {
-    /*Page Colors*/
-    --bg-color: #ffffff;
-    /*Mesh Gradient Colors*/
-    --color-one: #4cd4b0;
-    --color-two: #7abfff;
-    --color-three: #f24d16;
-    --color-four: #edd834;
-  }
-
-  #background_mesh {
-    z-index: -10;
-    position: relative;
-    display: contents;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--bg-color);
-    height: fit-content;
-    width: 100%;
-    overflow: hidden;
-  }
-  .mesh_1 {
-    position: absolute;
-    height: 700px;
-    width: 700px;
-    background-color: var(--color-one);
-    border-radius: 50%;
-    bottom: 60%;
-    left: -20%;
-    z-index: -8;
-    animation: meshAnimate 4s infinite linear;
-  }
-  .mesh_2 {
-    position: absolute;
-    height: 700px;
-    width: 700px;
-    background-color: var(--color-two);
-    border-radius: 50%;
-    bottom: 70%;
-    right: 0%;
-    z-index: -7;
-    animation: meshAnimate 2s 4s infinite linear;
+.gradient-background {
+    background: linear-gradient(163deg,#edd0ff,#a3caff,#fcff95);
+    background-size: 180% 180%;
+    animation: gradient-animation 4s ease infinite;
   }
   
-  .mesh_3 {
-    position: absolute;
-    height: 700px;
-    width: 700px;
-    background-color: var(--color-three);
-    border-radius: 50%;
-    bottom: -40%;
-    left: 25%;
-    z-index: -7;
-    animation: meshAnimate 2s 4s infinite linear;
-  }
-  
-  .mesh_4 {
-    position: absolute;
-    height: 700px;
-    width: 700px;
-    background-color: var(--color-four);
-    border-radius: 50%;
-    bottom: -30%;
-    right: -25%;
-    z-index: -7;
-    animation: meshAnimate 2s 6s infinite linear;
-  }
-  
-  .blur {
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.2);
-    height: 100%;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: -5;
-    backdrop-filter: blur(400px);
-  }
-  
-  @keyframes meshAnimate {
+  @keyframes gradient-animation {
     0% {
-      transform: scale(1);
+      background-position: 0% 50%;
     }
     50% {
-      transform: scale(1.5);
+      background-position: 100% 50%;
     }
     100% {
-      transform: scale(1);
+      background-position: 0% 50%;
     }
   }
-
 /*intro section*/
 
 #intro body {
     display: grid;
     place-items: center;
     min-height: 100svh;
-    background-color: black;
-    color: white;
+    background-color: #e8ffaa;
+    color: rgb(95, 145, 192);
   }
   .line {
     display: flex;
     justify-content: space-between;
   }
   .word {
-    transition: opacity 0.2s ease-in-out;
+    color: whitesmoke;
   }
 
   .blank_word {
@@ -127,17 +55,17 @@ html {
   }
 
   a.word {
-    color: inherit;
+    color: whitesmoke;
     .letter {
       position: relative;
       &::before {
         content: "";
         width: 100%;
-        height: 3px;
+        height: 5px;
         display: block;
         position: absolute;
         bottom: 0;
-        background-color: #FFF8B4;
+        background-color: #e8ffaa;
       }
     }
   }
@@ -148,21 +76,39 @@ html {
       rotate(calc(var(--r, 0) * 1deg)) scale(var(--s, 1));
   }
   
-  .wobbly {
-    font-size: 4.5vw;
-    font-family: Rubik, sans-serif;
-    width: 45vw;
+  .wobbly_left {
+    font-size: 5vw;
+    font-family: 'Josefin Sans', sans-serif;
     text-transform: uppercase;
-    width: 100%;
-    
+    width: 60%;
+    text-align: left;
+    display: inline;
+    float: left;
+
     &:hover .word {
-      opacity: 0.25;
-  
       &:hover {
         opacity: 1;
       }
     }
   }
+
+  .wobbly_right {
+    font-size: 4.5vw;
+    font-family: Rubik, sans-serif;
+    width: 100%;
+    text-transform: uppercase;
+    text-align: right;
+    display: inline;
+    float: right;
+    &:hover .word {
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+
+  
+
 /*intro section end*/
 body {
     margin: 0
@@ -490,16 +436,19 @@ textarea {
 }
 
 a {
-    color: #D7C2FA;
+    color: #edd0ff;
     text-decoration: none
 }
 
 a:focus,
 a:hover {
-    color: #D7C2FA;
+    color: #e8ffaa;
     text-decoration: underline
 }
 
+#title:hover {
+    color: #edd0ff;
+}
 a:focus {
     outline: 5px auto -webkit-focus-ring-color;
     outline-offset: -2px
@@ -766,12 +715,12 @@ mark {
 }
 
 .text-primary {
-    color: #D7C2FA
+    color: #edd0ff
 }
 
 a.text-primary:focus,
 a.text-primary:hover {
-    color: #ff312d
+    color: #edd0ff
 }
 
 .text-success {
@@ -812,7 +761,7 @@ a.text-danger:hover {
 
 .bg-primary {
     color: #fff;
-    background-color: #D7C2FA
+    background-color: #edd0ff
 }
 
 a.bg-primary:focus,
@@ -3136,8 +3085,8 @@ fieldset[disabled] .btn-default:hover {
 
 .btn-primary {
     color: #fff;
-    background-color: #D7C2FA;
-    border-color: #D7C2FA
+    background-color: #edd0ff;
+    border-color: #edd0ff
 }
 
 .btn-primary.focus,
@@ -3185,12 +3134,12 @@ fieldset[disabled] .btn-default:hover {
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    background-color: #D7C2FA;
-    border-color: #D7C2FA
+    background-color: #edd0ff;
+    border-color: #edd0ff
 }
 
 .btn-primary .badge {
-    color: #D7C2FA;
+    color: #edd0ff;
     background-color: #fff
 }
 
@@ -3376,8 +3325,8 @@ fieldset[disabled] .btn-warning:hover {
 
 .btn-danger {
     color: #fff;
-    background-color: #D7C2FA;
-    border-color: #D7C2FA
+    background-color: #edd0ff;
+    border-color: #edd0ff
 }
 
 .btn-danger.focus,
@@ -3425,17 +3374,17 @@ fieldset[disabled] .btn-warning:hover {
 fieldset[disabled] .btn-danger.focus,
 fieldset[disabled] .btn-danger:focus,
 fieldset[disabled] .btn-danger:hover {
-    background-color: #D7C2FA;
-    border-color: #D7C2FA
+    background-color: #edd0ff;
+    border-color: #edd0ff
 }
 
 .btn-danger .badge {
-    color: #D7C2FA;
+    color: #edd0ff;
     background-color: #fff
 }
 
 .btn-link {
-    color: #D7C2FA;
+    color: #edd0ff;
     font-weight: 400;
     border-radius: 0
 }
@@ -3459,7 +3408,7 @@ fieldset[disabled] .btn-link {
 
 .btn-link:focus,
 .btn-link:hover {
-    color: #D7C2FA;
+    color: #edd0ff;
     text-decoration: underline;
     background-color: transparent
 }
@@ -3628,7 +3577,7 @@ tbody.collapse.in {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #D7C2FA
+    background-color: #edd0ff
 }
 
 .dropdown-menu>.disabled>a,
@@ -4130,7 +4079,7 @@ tbody.collapse.in {
 .nav .open>a:focus,
 .nav .open>a:hover {
     background-color: transparent;
-    border-color: #D7C2FA
+    border-color: #edd0ff
 }
 
 .nav .nav-divider {
@@ -4190,7 +4139,7 @@ tbody.collapse.in {
 .nav-pills>li.active>a:focus,
 .nav-pills>li.active>a:hover {
     color: #fff;
-    background-color: #D7C2FA
+    background-color: #edd0ff
 }
 
 .nav-stacked>li {
@@ -4982,7 +4931,7 @@ a.label:hover {
 }
 
 .label-primary {
-    background-color: #D7C2FA
+    background-color: #edd0ff
 }
 
 .label-primary[href]:focus,
@@ -5018,7 +4967,7 @@ a.label:hover {
 }
 
 .label-danger {
-    background-color: #D7C2FA
+    background-color: #edd0ff
 }
 
 .label-danger[href]:focus,
@@ -5058,7 +5007,7 @@ a.label:hover {
 
 .list-group-item.active>.badge,
 .nav-pills>.active>a>.badge {
-    color: #D7C2FA;
+    color: #edd0ff;
     background-color: #fff
 }
 
@@ -5956,14 +5905,16 @@ main {
     height: auto;
     overflow-x: hidden;
     overflow-y: auto;
-    background-color: #fff;
+    background-color: whitesmoke;
     z-index: 999;
     -webkit-transition: left .2s linear;
     -o-transition: left .2s linear;
     transition: left .2s linear;
     left: -240px;
     top: 52px;
-    padding: 20px
+    padding: 20px;
+    box-shadow: 0.5px 0px 5px 0px rgb(245, 197, 255);
+
 }
 
 .sidebar .navbar-collapse {
@@ -6023,7 +5974,7 @@ main {
 }
 
 .nav>li>a:hover {
-    color: #D7C2FA
+    color: #edd0ff
 }
 
 .nav-footer-social-buttons {
