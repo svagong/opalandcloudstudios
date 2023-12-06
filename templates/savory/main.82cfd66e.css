@@ -108,64 +108,7 @@ html {
   }
 
 
-/* home page previews*/
-@property --h { 
-  syntax: "<length>";
-  initial-value: 0px;
-  inherits: true;
-}
 
-.preview {
-  --w: 300px; /* image size */
-  --b: 12px;  /* control the overlay size (it will be w + b)*/
-  --g: 15px;  /* the gap between the overlay and the image on hover */
-  --c: #F56991;
-  
-  width: var(--w);
-  aspect-ratio: 1;
-  object-fit: cover;
-  object-position: right;
-  padding-inline: clamp(0px,var(--h),var(--w)) 0;
-  box-sizing: border-box;
-  background: var(--c);
-  box-shadow: calc(var(--h) - var(--w) - var(--b)) 0 0 var(--b) var(--c);
-  --h: calc(var(--w) + var(--b));
-  transition: --h .6s linear;
-  cursor: pointer;
-}
-.alt {
-  object-position: left;
-  padding-inline: 0 clamp(0px,var(--h),var(--w));
-  box-shadow: calc(var(--w) + var(--b) - var(--h)) 0 0 var(--b) var(--c);
-}
-
-.alt2 {
-  object-position: left;
-  padding-inline: 0 clamp(0px,var(--h),var(--w));
-  box-shadow: calc(var(--w) + var(--b) - var(--h)) 0 0 var(--b) var(--c);
-}
-
-.preview:hover {
-  --h: calc(-1*var(--g));
-}
-
-/* a light version for Firefox  */
-@supports (-moz-appearance:none) {
-  .preview {
-    --b: 0px!important;
-    --g: 0px!important;
-    transition: .6s linear;
-  }
-}
-
-.body_preview {
-  margin: 0;
-  min-height: 100vh;
-  display: grid;
-  place-content: center;
-  grid-auto-flow: column;
-  gap: 80px;
-}
 
 /*intro section end*/
 body {
@@ -238,7 +181,6 @@ h1 {
     color: whitesmoke;
     font-family: Rubik, sans-serif;
     display: flex;
-    margin-right: -5em;
 }
 
 mark {
@@ -2309,7 +2251,7 @@ table th[class*=col-] {
 }
 
 @media screen and (max-width:767px) {
-    .table-responsive {
+    .table-responsive .body_preview {
         width: 100%;
         margin-bottom: 18px;
         overflow-y: hidden;
@@ -5852,7 +5794,7 @@ button.close {
 @media (min-width:1200px) {
 
     .grid-item,
-    .grid-sizer {
+    .grid-sizer{
         width: 32.633%
     }
 }
