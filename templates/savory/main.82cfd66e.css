@@ -107,7 +107,26 @@ html {
     }
   }
 
+  /*work*/
 
+  .work-item {
+	margin: 0 0 2em 0;
+}
+
+.work-item .image {
+	margin: 0 0 1.5em 0;
+}
+
+.work-item h3 {
+	font-size: 1em;
+	margin: 0 0 0.5em 0;
+}
+
+.work-item p {
+	font-size: 0.8em;
+	line-height: 1.5em;
+	margin: 0;
+}
 
 
 /*intro section end*/
@@ -496,6 +515,28 @@ img {
 
 .img-circle {
     border-radius: 50%
+}
+
+.image {
+	border-radius: 0.35em;
+	border: 0;
+	display: inline-block;
+	position: relative;
+}
+
+.image img {
+	border-radius: 0.35em;
+	display: block;
+}
+
+.image.fit {
+	display: block;
+	margin: 0 0 2em 0;
+	width: 100%;
+}
+
+.image.fit img {
+	width: 100%;
 }
 
 hr {
