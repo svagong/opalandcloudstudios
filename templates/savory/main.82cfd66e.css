@@ -111,6 +111,7 @@ html {
 
   .work-item {
 	margin: 0 0 2em 0;
+    display: flex;
 }
 
 .work-item .image {
@@ -118,7 +119,7 @@ html {
 }
 
 .work-item h3 {
-	font-size: 1em;
+	font-size: 2em;
 	margin: 0 0 0.5em 0;
 }
 
@@ -484,6 +485,20 @@ a:focus {
 figure {
     margin: 0
 }
+.head_33 {
+    height: 100%;
+    width: 33%;
+}
+
+.head_66 {
+    height: 100%;
+    width: 66%;
+}
+
+.head_block {
+    vertical-align: middle;
+
+}
 
 img {
     vertical-align: middle
@@ -530,9 +545,9 @@ img {
 }
 
 .image.fit {
-	display: block;
+	display: inline;
+    float: right;
 	margin: 0 0 2em 0;
-	width: 100%;
 }
 
 .image.fit img {
