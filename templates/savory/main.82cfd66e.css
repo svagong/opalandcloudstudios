@@ -510,9 +510,20 @@ figure {
 
 }
 
+@media (max-width: 60em) {
+    .head_33 {
+    display: none;
+    }
+
+    .head_66 {
+        width:100%;
+    }
+    }
+
 img {
     vertical-align: middle
 }
+
 
 .img-responsive {
     display: block;
