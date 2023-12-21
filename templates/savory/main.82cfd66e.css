@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Cabin:400,700|Source+Sans+Pro:400,700);
 @import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;1,600&display=swap');
 
 
 /*!
@@ -79,12 +79,13 @@ html {
   .wobbly_left {
     font-size: 5vw;
     font-family: 'Josefin Sans', sans-serif;
+    font-style: italic;
     text-transform: uppercase;
     width: 60%;
     text-align: left;
     display: inline;
     float: left;
-
+    margin-bottom: 10%;
     &:hover .word {
       &:hover {
         opacity: 1;
@@ -100,6 +101,7 @@ html {
     text-align: right;
     display: inline;
     float: right;
+    margin-bottom: 10%;
     &:hover .word {
       &:hover {
         opacity: 1;
@@ -119,16 +121,23 @@ html {
 }
 
 .work-item h3 {
-	font-size: 2em;
+	font-size: 2.5em;
 	margin: 0 0 0.5em 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #414141;
 }
 
 .work-item p {
-	font-size: 0.8em;
+	font-size: 1em;
 	line-height: 1.5em;
 	margin: 0;
+    color: #414141;
 }
 
+.work-item li {
+    color: #414141;
+    font-size: 1em;
+}
 
 /*intro section end*/
 body {
@@ -497,6 +506,7 @@ figure {
 
 .head_block {
     vertical-align: middle;
+    margin-top: 30%;
 
 }
 
