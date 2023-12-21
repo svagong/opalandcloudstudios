@@ -5924,13 +5924,17 @@ button.close {
 }
 
 .fa-icon {
-    color: #000;
+    color: #414141;
     width: 32px;
     height: 32px;
     display: inline-block;
     line-height: 32px;
     font-size: 15px;
     text-align: center
+}
+
+.fa-icon:hover {
+    color: #edd0ff;
 }
 
 .form-control {
