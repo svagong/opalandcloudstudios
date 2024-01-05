@@ -5920,12 +5920,16 @@ button.close {
     padding: 0
 }
 
+.project-text-inner p {
+    color: #414141;
+
+}
 .grid-item:hover .project-description {
     opacity: 1
 }
 
 .section-container-spacer {
-    margin-bottom: 30px
+    margin-bottom: 30px;
 }
 
 .btn {
