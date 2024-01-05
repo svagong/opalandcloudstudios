@@ -121,22 +121,22 @@ html {
 }
 
 .work-item h3 {
-	font-size: 2.5em;
+	font-size: 2.8em;
 	margin: 0 0 0.5em 0;
     font-family: 'Josefin Sans', sans-serif;
-    color: #414141;
+    color: whitesmoke;
 }
 
 .work-item p {
-	font-size: 1em;
+	font-size: 1.2em;
 	line-height: 1.5em;
 	margin: 0;
-    color: #414141;
+    color: whitesmoke;
 }
 
 .work-item li {
-    color: #414141;
-    font-size: 1em;
+    color: whitesmoke;
+    font-size: 1.2em;
 }
 
 /*intro section end*/
