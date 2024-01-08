@@ -5953,10 +5953,20 @@ button.close {
     color: #414141;
 
 }
-prev_next_project{
+prev_next_project {
     display: block;
 } 
+.next_project_top {
+    color: whitesmoke;
+    font-size: 2em;
+    float: right;
+}
 
+.previous_project_top {
+    color: whitesmoke;
+    font-size: 2em;
+    float: left;
+}
 .next_project {
     color: #2e353d;
     font-size: 2em;
