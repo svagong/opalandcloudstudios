@@ -298,7 +298,7 @@ button {
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: transparent; /* Set a background color */
-    color: whitesmoke; /* Text color */
+    color: #2e353d; /* Text color */
     padding: 15px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 18px; /* Increase font size */
@@ -5953,6 +5953,24 @@ button.close {
     color: #414141;
 
 }
+prev_next_project{
+    display: block;
+    margin: auto;
+    width: 50%;
+} 
+
+.next_project {
+    color: #2e353d;
+    font-size: 2em;
+    float: right;
+}
+
+.previous_project {
+    color: #2e353d;
+    font-size: 2em;
+    float: left;
+}
+
 .grid-item:hover .project-description {
     opacity: 1
 }
@@ -5961,6 +5979,11 @@ button.close {
     margin-bottom: 30px;
 }
 
+pdf_center {
+    width: 100%;
+    float: right;
+    
+}
 .btn {
     -webkit-transition: all .1s linear;
     -o-transition: all .1s linear;
