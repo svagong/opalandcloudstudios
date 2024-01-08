@@ -5955,8 +5955,6 @@ button.close {
 }
 prev_next_project{
     display: block;
-    margin: auto;
-    width: 50%;
 } 
 
 .next_project {
@@ -5980,9 +5978,7 @@ prev_next_project{
 }
 
 pdf_center {
-    width: 100%;
-    float: right;
-    
+    width: 100%
 }
 .btn {
     -webkit-transition: all .1s linear;
