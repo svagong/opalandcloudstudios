@@ -307,6 +307,7 @@ button {
   #scroll_top:hover {
     text-decoration: underline;
     text-decoration-color:#e8ffaa;
+    color: #e8ffaa;
   }
 
 button,
@@ -502,7 +503,7 @@ textarea {
 }
 
 a {
-    color: #edd0ff;
+    color: whitesmoke;
     text-decoration: none
 }
 
