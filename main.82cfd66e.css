@@ -136,6 +136,12 @@ html {
     color: whitesmoke;
 }
 
+.work-item h1 {
+	font-size: 2.8em;
+	margin: 0 0 0.5em 0;
+    font-family: 'Josefin Sans', sans-serif;
+    color: whitesmoke;
+}
 .work-item p {
 	font-size: 1.2em;
 	line-height: 1.5em;
@@ -534,15 +540,34 @@ figure {
     width: 66%;
 }
 
+.head_40 {
+    height: 100%;
+    width: 100%;
+}
+
+.head_60{
+    height: 100%;
+    width: 100%;
+}
+
 .head_block {
     vertical-align: middle;
     margin-top: 30%;
 
 }
 
+.simple {
+    vertical-align: middle;
+    margin-top: 5%;
+
+}
+
 @media (max-width: 60em) {
     .head_33 {
     display: none;
+    }
+    .head_40 {
+        display: none;
     }
 
     .head_66 {
@@ -554,11 +579,19 @@ img {
     vertical-align: middle
 }
 
+.img_row {
+    display: inline;
+}
 
 .img-responsive {
     display: block;
     max-width: 100%;
     height: auto
+}
+
+.img-preview {
+    max-width: 70%;
+    padding: 10%;
 }
 
 .img-rounded {
@@ -5871,6 +5904,11 @@ button.close {
 .grid {
     width: 100%;
     margin-top: -11px
+}
+
+.grid_preview {
+    display: flex;
+    justify-content: left;
 }
 
 .grid-overlay {
