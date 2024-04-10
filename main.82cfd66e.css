@@ -556,6 +556,11 @@ figure {
 
 }
 
+.horizontal_list li  {
+color: whitesmoke;
+display: inline-block;
+}
+
 .simple {
     vertical-align: middle;
     margin-top: 5%;
