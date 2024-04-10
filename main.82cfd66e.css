@@ -26,8 +26,10 @@ html {
 
 /*background*/
 .gradient-background {
+    overflow: scroll;
     background: linear-gradient(163deg,#edd0ff,#a3caff,#fcff95);
     background-size: 200% 200%;
+    position: sticky;
     animation: gradient-animation 4s ease infinite;
   }
   @keyframes gradient-animation {
@@ -496,7 +498,9 @@ body {
     font-size: 14px;
     line-height: 1.78;
     color: #555;
-    background-color: #fff
+    background-color: #fff;
+    height: 100vh;
+    display: flex;
 }
 
 button,
@@ -543,11 +547,14 @@ figure {
 .head_40 {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: end;
 }
 
 .head_60{
     height: 100%;
     width: 100%;
+    float:"right"
 }
 
 .head_block {
@@ -578,7 +585,7 @@ display: inline-block;
     .head_66 {
         width:100%;
     }
-    }
+}
 
 img {
     vertical-align: middle
@@ -4457,7 +4464,7 @@ tbody.collapse.in {
     .navbar-collapse {
         width: auto;
         border-top: 0;
-        box-shadow: none
+        box-shadow: none;
     }
 
     .navbar-collapse.collapse {
@@ -4619,6 +4626,10 @@ tbody.collapse.in {
 }
 
 @media (max-width:767px) {
+    body {
+        flex-direction: column;
+    }
+
     .navbar-nav .open .dropdown-menu {
         position: static;
         float: none;
